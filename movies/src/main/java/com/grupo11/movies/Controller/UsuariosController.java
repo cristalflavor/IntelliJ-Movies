@@ -15,7 +15,7 @@ public class UsuariosController {
 
     @PostMapping("/registrarse")
     public String registrarNuevoUsuario(@ModelAttribute Usuarios usuario) {
-        System.out.println("NO APARECE ESTO POR TANTO EL ENDPOINT NO ESTÁ FUNCIONANDO");
+        System.out.println("NO APARECE ESTO POR TANTO EL ENDPOINT NO ESTÁ FUNCIONANDO...");
         usuariosRepository.save(usuario);
         return "redirect:/index.html";
     }
