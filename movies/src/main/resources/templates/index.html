@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Grupo 11">
+    <meta name="description" content="Proyecto de Frontend CaC Fullstack java">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS Scroll Libreria -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Google Fonts Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- Estilos Personalizados CSS -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/newStyle.css" />
+    <!-- Title -->
+    <title>Iniciar Sesión | MOVIE APP</title>
+</head>
+
+<body class="body-registro" data-aos-easing="ease" data-aos-delay="0" data-aos-duration="0" cz-shortcut-listen="true">
+    <!-- Header -->
+    <header class="header-registro">
+        <nav class="nav-bar">
+            <a class="movie-icon sacudir-texto" href="#">
+                <i class="bi bi-person-fill"></i>
+                <span>Inicio de Sesión - Movie App</span>
+            </a>
+            <a id="invitado" href="./pages/home.html">
+                <i class="bi bi-person-fill"></i>
+                <span>Invitado</span>
+            </a>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a class="nav-link" href="./pages/home.html">Home</a></li>
+                <li class="nav-list-item iniciar-sesion"><a class="nav-link"
+                        href="pages/registrarse/registrarse.html">Registrarse</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main" class="main">
+            <!-- Seccion Inicio de Sesion -->
+            <section data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" class="seccion-registro">
+                <div class="container mb-5 ">
+                    <h2 class="titulo-registro titulo-sesion"><i class="bi bi-person-fill"></i> Inicio de Sesión</h2>
+                </div>
+                <div class="container">
+                    <form id="loginForm" class="row" action="./pages/home.html" method="get">
+                        <div class="col-12 col-md-6 col-lg-6 input-height">
+                            <div class="error">
+                                <label for="email" class="form-label"></label>
+                                <input type="email" class="input" placeholder="Email" id="email" name="email">
+                                <span class="texto-error"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 input-height">
+                            <div class="error">
+                                <label for="password" class="form-label"></label>
+                                <input class="input" type="password" placeholder="Contraseña" id="password"
+                                    name="contraseña">
+                                <span class="texto-error"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="btn-registro" class="btn-registro" type="submit">Iniciar Sesión</button>
+                            <span class="texto-error"></span>
+                        </div>
+                        <div class="ayuda">
+                            <a class="ayuda" href="pages/registrarse/registrarse.html">Registrate</a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+        <script src="./assets/js/validacion.js">
+
+        </script>
+        <!-- Script de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+        <!-- Script de Aos Scroll Libreria -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script type="text/javascript" src="./js/js.js"></script>
+</body>
+
+</html>
